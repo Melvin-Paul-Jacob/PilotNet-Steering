@@ -19,25 +19,6 @@ Make sure you have the following dependencies installed:
 pip install torch torchvision tensorflow numpy opencv-python matplotlib
 ```
 
-## Training
-To train the model, run:
-```bash
-python train.py --dataset /path/to/dataset --epochs 50 --batch_size 32
-```
-Hyperparameters can be modified within `train.py`.
-
-## Inference
-To run inference on a test image or live feed:
-```bash
-python inference.py --model model.pth --video test_video.mp4
-```
-
-## Deployment on NVIDIA Jetson
-For real-time inference on **NVIDIA Jetson Xavier, Nano, Orin**, install:
-```bash
-pip install torch torchvision --extra-index-url https://developer.download.nvidia.com/compute/redist/jp/vxx
-```
-
 ## Future Improvements
 - Integrate sensor fusion with LiDAR and IMU.
 - Improve generalization with diverse datasets.
@@ -45,4 +26,3 @@ pip install torch torchvision --extra-index-url https://developer.download.nvidi
 
 ## References
 - [NVIDIA End-to-End Learning for Self-Driving Cars](https://arxiv.org/abs/1604.07316)
-
